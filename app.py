@@ -41,7 +41,8 @@ class AnalyticsCopilot:
     
     def __init__(self):
         """Initialize the copilot application."""
-        self.rag = SchemaRAG(persist_dir="./chroma_db")
+        self.rag = SchemaRAG()
+
         self.sql_guard = SQLGuard()
         self.db_path = "analytics.db"
         self._initialize_database()

@@ -32,7 +32,15 @@ class SchemaRAG:
             anonymized_telemetry=False
         )
         
-        self.client = chromadb.Client(settings)
+        import chromadb
+
+class SchemaRAG:
+    def __init__(self):
+        self.client = chromadb.Client()
+        self.collection = self.client.get_or_create_collection(
+            name="schema_collection"
+        )
+
         
         # Get or create collection for schema information
         self.collection = self.client.get_or_create_collection(
