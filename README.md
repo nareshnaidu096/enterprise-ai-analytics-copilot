@@ -1,4 +1,9 @@
 # Enterprise AI Analytics Copilot
+🚀 Live Demo:
+👉 https://enterprise-ai-analytics-copilot-qzenvntbrjnuncczarqgnt.streamlit.app  
+
+🟢 Production Deployed on Streamlit Cloud  
+Auto-deploy enabled via GitHub integration.
 
 A sophisticated MVP application that converts natural language queries to SQL using OpenAI, with RAG-powered schema awareness and security validation.
 
